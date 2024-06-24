@@ -14,8 +14,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
-lib64/
 parts/
 sdist/
 var/
@@ -162,4 +160,4 @@ cython_debug/
 #.idea/
 js/*.js
 js/*.txt
-
+client/node_modules
