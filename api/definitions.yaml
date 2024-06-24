@@ -1,0 +1,20 @@
+Swiper:
+  new_value_path: activeIndex
+  on_change_name: onSlideChange
+  arguments:
+    navigation:
+      argument_type: boolean
+      default_value: true
+      description: Enable navigation through the slides
+    lazy:
+      argument_type: boolean
+      default_value: true
+      description: Enable lazy loading of images
+    onSlideChange:
+      callback: {}
+      argument_type: function
+      description: Callback function that will be executed when the slide is changed
+  input_name: null
+SwiperSlide:
+  input_name: null
+  arguments: {}
