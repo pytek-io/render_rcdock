@@ -1,20 +1,19 @@
-Swiper:
-  new_value_path: activeIndex
-  on_change_name: onSlideChange
+DockLayout:
+  ref_hook: "ref"
   arguments:
-    navigation:
-      argument_type: boolean
-      default_value: true
-      description: Enable navigation through the slides
-    lazy:
-      argument_type: boolean
-      default_value: true
-      description: Enable lazy loading of images
-    onSlideChange:
-      callback: {}
-      argument_type: function
-      description: Callback function that will be executed when the slide is changed
-  input_name: null
-SwiperSlide:
-  input_name: null
-  arguments: {}
+    defaultLayout:
+      description: "default layout."
+      argument_type: "dict"
+    onKeyPress:
+      description: "onKeyPress."
+      argument_type: "void"
+  methods:
+    dockMove:
+      description: "Move a dock to a new position."
+      method: "dockMove"
+    saveLayout:
+      description: "Save the current layout."
+      method: "saveLayout"
+    loadLayout:
+      description: "Load a layout."
+      method: "loadLayout"

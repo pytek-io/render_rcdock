@@ -9,6 +9,6 @@ const RenderDockLayout = React.forwardRef((props, ref) => <DockLayout
 />
 );
 
-registerComponent("DockLayout", "", RenderDockLayout, "rc-dock");
+registerComponent("DockLayout", "", RenderDockLayout, "rcdock");
 
-signal_script_loaded("rc-dock");
+signal_script_loaded("rcdock");
