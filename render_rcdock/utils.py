@@ -1,5 +1,5 @@
 from itertools import count
-
+from enum import Enum
 import render_antd.utils as antd_utils
 import render_html as html
 from render_utils import MORE_MENU, create_icon
@@ -7,10 +7,28 @@ from render_utils import MORE_MENU, create_icon
 import render as r
 from render import Component, get_window
 
-from .components import DockLayout, DropDirection
+from .definitions import DockLayout
 
 COUNTER = count()
 LIGHT_GREY = "#dddddd"
+
+
+class DropDirection(Enum):
+    LEFT = "left"
+    RIGHT = "right"
+    BOTTOM = "bottom"
+    TOP = "top"
+    MIDDLE = "middle"
+    REMOVE = "remove"
+    BEFORE_TAB = "before-tab"
+    AFTER_TAB = "after-tab"
+    FLOAT = "float"
+    FRONT = "front"
+    MAXIMIZE = "maximize"
+    NEW_WINDOW = "new-window"
+    MOVE = "move"
+    ACTIVE = "active"
+    UPDATE = "update"
 
 
 DEFAULT_ICON_STYLE = {

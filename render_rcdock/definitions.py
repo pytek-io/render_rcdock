@@ -1,5 +1,3 @@
-# AUTO GENERATED FILE - DO NOT EDIT!
-
 from render import Component, create_callback
 
 
