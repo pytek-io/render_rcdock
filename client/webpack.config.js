@@ -9,8 +9,8 @@ module.exports = (env, argv) => {
     output: {
       publicPath: "/js_files/",
       path: production ? path.resolve(__dirname, "..", "..") : path.resolve(__dirname, ".."),
-      filename: 'render_rcdock/js/index.js',
-      chunkFilename: "render_rcdock/js/[contenthash].[name].js",
+      filename: '../js/index.js',
+      chunkFilename: "../js/[contenthash].[name].js",
     },
     resolve: {
       extensions: [".tsx", ".ts", ".js", "scss", "css"],

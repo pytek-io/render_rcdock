@@ -1,5 +1,6 @@
 DockLayout:
   ref_hook: "ref"
+  create_stub: true
   arguments:
     defaultLayout:
       description: "default layout."
